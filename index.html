@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ALERO - JOGO DA MEMÓRIA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <i id="score-toggle" class="fas fa-trophy"></i>
+
+  <div class="cards-row">
+    <div class="left-card card">
+      <div class="choose-username">
+        <h1>Nome do Jogador!</h1>
+        <div class="username-container">
+          <input type="text" id="username" name="username" autocomplete="off" spellcheck="false" />
+          <p class="placeholder" id="placeholder">seu nome aqui!</p>
+        </div>
+        <button id="play" class="game-button">
+          <i class="fas fa-gamepad"> Iniciar</i>
+        </button>
+      </div>
+
+      <div id="images-grid" class="hide images-grid"></div>
+
+      <div id="mode-container" class="hide">
+        <h1>Escolha a dificuldade</h1>
+        <div class="mode-btns">
+          <button id="easy-btn" class="game-button">
+            Fácil
+          </button>
+          <button id="hard-btn" class="game-button">
+            Difícil
+          </button>
+        </div>
+      </div>
+
+      <div id="congrats-container" class="final-container hide">
+        <h1>
+          Você Venceu! 🎉
+        </h1>
+        <h3>Você ganhou em <strong id="user-seconds"></strong></h3>
+        <button class="play-again-btn game-button">
+          <i class="fas fa-undo-alt"></i>
+        </button>
+      </div>
+
+      <div id="loose-container" class="final-container hide">
+        <h1>
+          Você Perdeu! 😵
+        </h1>
+        <h3>Você fez <strong id="tries-span"></strong> pares seguidos </h3>
+        <button class="play-again-btn game-button">
+          <i class="fas fa-undo-alt"></i>
+        </button>
+      </div>
+    </div>
+
+    <div id="score-container" class="card score-container">
+
+      <i class="fas fa-trophy" id="scores-trophy"></i>
+      <h2 class="user-scores score-title">Ranking</h2>
+      <div class="ribbon-wrapper">
+        <img class="ribbon-tail"
+          src="https://cdn.glitch.com/56d96ce9-5171-477f-8560-558ec3af0051%2Fribbon-tail.svg?v=1596043434209" alt="" />
+        <img class="ribbon-score"
+          src="https://cdn.glitch.com/56d96ce9-5171-477f-8560-558ec3af0051%2Fribbon-score.svg?v=1596046610666" alt="" />
+      </div>
+
+      <div id="user-scores" class="user-scores"></div>
+
+    </div>
+
+  </div>
+  <footer class="footer">
+    <p> &copy; <a href="https://www.aquivaleapena.com" target="_blank"> Pen6 MArketing</a>. Todos os direitos
+      reservados.
+    </p>
+  </footer>
+
+
+
+  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/56942480bb.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
