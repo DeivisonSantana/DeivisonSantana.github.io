@@ -25,11 +25,11 @@ let imgSrc = [
   },
   {
     pairId: 7,
-    src: "assets/image_6.jpg",
+    src: "assets/image_6.JPG",
   },
   {
     pairId: 8,
-    src: "assets/image_5.jpg",
+    src: "assets/image_5.JPG",
   },
 ];
 
